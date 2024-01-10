@@ -1,1 +1,1 @@
-# 2Nex2B2TCore
+# Nex2B2TCore
