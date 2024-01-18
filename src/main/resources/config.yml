@@ -1,0 +1,7 @@
+clearSuperEnchants:
+  #是否清理超过该附魔最大等级的附魔
+  higherThanMax: false
+  #最高允许的附魔等级
+  lvl: 255
+  #是否把超标附魔等级替换为该附魔最大等级，否则直接移除
+  replace: true

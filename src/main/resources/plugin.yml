@@ -1,0 +1,5 @@
+name: Nex2B2TCore
+version: '${project.version}'
+main: org.lins.mmmjjkx.nex2b2tcore.Nex2B2TCore
+authors: [mmmjjkx, hitech0926]
+description: A core for servers like 2b2t
