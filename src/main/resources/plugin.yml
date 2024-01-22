@@ -3,3 +3,28 @@ version: '${project.version}'
 main: org.lins.mmmjjkx.nex2b2tcore.Nex2B2TCore
 authors: [mmmjjkx, hitech0926]
 description: A core for servers like 2b2t
+commands:
+  clearsuperenchants:
+    aliases: ["cse"]
+    permission: nex2b2tcore.clearsuperenchants
+  nex2b2tcore:
+    aliases: ["n2b2tc"]
+    permission: nex2b2tcore.help
+    description: 帮助
+  suicide:
+    permission: nex2b2tcore.suicide
+    description: 自杀
+  worldinfo:
+    permission: nex2b2tcore.worldinfo
+    description: 查看世界信息
+permissions:
+  nex2b2tcore.help:
+    description: 帮助
+    default: op
+  nex2b2tcore.suicide:
+    default: true
+    description: 自杀
+  nex2b2tcore.worldinfo:
+    default: op
+  nex2b2tcore.clearsuperenchants:
+    default: op

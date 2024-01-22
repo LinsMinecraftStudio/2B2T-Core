@@ -1,1 +1,15 @@
 no-permission: "&c你没有权限去这样做"
+un-placeable-dispenser: "&4你不可以在这里放置发射器！"
+
+worldinfo-1: "&a世界 &e%world%"
+worldinfo-2: "&a种子: &e%seed%"
+worldinfo-3: "&a所在这个世界的玩家: &e%players%"
+
+help-1: "&bNex2B2TCore 帮助"
+help-2: "&a/nex2b2tcore(n2b2tc) &e显示此帮助"
+help-3: "&a/cleansuperenchants(cse) &e清理超级附魔(可在配置中跳转清理设置)"
+help-4: "&a/suicide &e自杀"
+help-5: "&a/worldinfo &e世界信息"
+help-6: "&a/serverinfo &e服务器信息"
+
+superEnchantsCleared: "&a已清理超级附魔"

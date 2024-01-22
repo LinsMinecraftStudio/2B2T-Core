@@ -6,7 +6,7 @@ import org.lins.mmmjjkx.nex2b2tcore.Nex2B2TCore;
 
 public abstract class AbstractSimpleCommand implements CommandExecutor {
     protected boolean hasPerm(CommandSender s, String cmdName) {
-        return s.hasPermission("nex2b2tcore.cmd." + cmdName);
+        return s.hasPermission("nex2b2tcore." + cmdName);
     }
 
     protected void sendNoPermission(CommandSender s) {
