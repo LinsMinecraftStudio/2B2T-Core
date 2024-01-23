@@ -29,6 +29,7 @@ public class ClearSuperEnchantsCmd extends AbstractSimpleCommand {
                     return true;
                 }
                 sendNoConsole(sender);
+                return false;
             } else if (args.length == 1) {
                 Player player = Bukkit.getPlayer(args[0]);
                 if (player == null) {
@@ -37,6 +38,7 @@ public class ClearSuperEnchantsCmd extends AbstractSimpleCommand {
                 }
                 doClear(player);
                 sendMsg(sender, "superEnchantsCleared");
+                return true;
             } else {
                 sendWrongInput(sender);
             }
@@ -50,7 +52,7 @@ public class ClearSuperEnchantsCmd extends AbstractSimpleCommand {
         PlayerInventory inventory = p.getInventory();
         for (int i = 0; i < 36; i++) {
             ItemStack item = inventory.getItem(i);
-            if (item == null || item.getType() == Material.AIR) continue;
+            if (item == null || item.getType() == Material.AIR || item.getEnchantments().isEmpty()) continue;
             Map<Enchantment, Integer> enchants = new HashMap<>(item.getEnchantments());
             enchants.forEach((en, lvl) -> {
                 if (lvl > en.getMaxLevel() && cleanHigherThanMax || lvl > maxLvl) {

@@ -3,6 +3,7 @@ package org.lins.mmmjjkx.nex2b2tcore;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.lins.mmmjjkx.nex2b2tcore.cmd.*;
+import org.lins.mmmjjkx.nex2b2tcore.listeners.ChickenDupe;
 import org.lins.mmmjjkx.nex2b2tcore.listeners.DispenserCrashPatch;
 import org.lins.mmmjjkx.nex2b2tcore.utils.MessageHandler;
 
@@ -23,6 +24,7 @@ public final class Nex2B2TCore extends JavaPlugin {
         messageHandler = new MessageHandler(this);
 
         new DispenserCrashPatch();
+        new ChickenDupe();
 
         getCommand("nex2b2tcore").setExecutor(new TheHelp());
         getCommand("clearsuperenchants").setExecutor(new ClearSuperEnchantsCmd());

@@ -5,3 +5,7 @@ clearSuperEnchants:
   lvl: 255
   #是否把超标附魔等级替换为该附魔最大等级，否则直接移除
   replace: true
+
+chickendupe:
+  #冷却时间, 单位为秒
+  cooldown: 60
