@@ -30,6 +30,8 @@ public final class Nex2B2TCore extends JavaPlugin {
         getCommand("clearsuperenchants").setExecutor(new ClearSuperEnchantsCmd());
         getCommand("suicide").setExecutor(new SuicideCmd());
         getCommand("worldinfo").setExecutor(new WorldInfoCmd());
+
+        getLogger().info("Nex2B2TCore 已启用!");
     }
 
     @Override
@@ -42,5 +44,6 @@ public final class Nex2B2TCore extends JavaPlugin {
     @Override
     public void onDisable() {
         // Plugin shutdown logic
+        getLogger().info("Nex2B2TCore 已卸载!");
     }
 }
